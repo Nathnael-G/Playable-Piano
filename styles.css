@@ -66,3 +66,41 @@ header input{
   left: 35px;
   background: #fff;
 }
+.keys{
+  display: flex;
+  list-style: none;
+  margin-top: 40;
+}
+.keys .key{
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  user-select: none;
+}
+.keys .black{
+  z-index: 2;
+  width: 44px;
+  height: 140px;
+  margin: 0 -22px;
+  background: linear-gradient(#333, #000);
+  border-radius: 0 0 5px 5px;
+}
+.keys .white{
+  height: 230px;
+  width: 70px;
+  border-radius: 8px;
+  border: 1px solid #000;
+    background: linear-gradient(#fff 96%, #eee 4%);
+}
+.keys .key span{
+ position: absolute;
+  bottom: 20px;
+  color: #A2A2A2;
+  font-size: 1.13rem;
+  text-align: center;
+  width: 100%;
+}
+.keys .black span{
+  bottom: 13px;
+  color: #888888;
+}
