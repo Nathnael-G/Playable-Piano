@@ -104,3 +104,45 @@ header input{
   bottom: 13px;
   color: #888888;
 }
+@media screen and (max-width: 815px) {
+  .container {
+    padding: 25px;
+  }
+  header {
+    flex-direction: column;
+  }
+  header :where(h2, .column) {
+    margin-bottom: 13px;
+  }
+  .volume input {
+    max-width: 100px;
+  }
+  .keys {
+    margin-top: 20px;
+  }
+  .keys .key:where(:nth-child(9), :nth-child(10)) {
+    display: none;
+  }
+  .keys .black {
+    height: 100px;
+    width: 40px;
+    margin: 0 -20px 0 -20px;
+  }
+  .keys .white {
+    height: 180px;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .keys .key:nth-child(13),
+  .keys .key:nth-child(14),
+  .keys .key:nth-child(15),
+  .keys .key:nth-child(16),
+  .keys .key :nth-child(17) {
+    display: none;
+  }
+  .keys .white {
+    width: 50px;
+  }
+} 
